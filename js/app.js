@@ -3,7 +3,7 @@ var p_color = document.querySelector('p');
 // changing the color of the first p tag we just selected to purple
 p_color.style.color = "purple";
 
-// Use quearySelectorAll to select all h1 tags;
+// Use quearySelectorAll to select all h1 tags that are inside of a div
 var h1_color = document.querySelectorAll('div > h1');
 // Loop through and change color to blue
 for (var i = 0; i < h1_color.length; i++) {
@@ -25,13 +25,13 @@ while (i < p_background.length) {
     i++
 }
 
-// Using getElementsByTagName to target div's and change the text
-var div_font_size = document.getElementsByTagName("div");
-// Loop through and change font size of divs
+// Using getElementsByTagName to target div's
+var div_inject = document.getElementsByTagName("div");
+// Loop through and inject an H2 tag
 i = 0;
-while (i < div_font_size.length) {
+while (i < div_inject.length) {
 
-    div_font_size[i].innerHTML = "<h2>I am Injected</h2>";
+    div_inject[i].innerHTML = "<h2>I am Injected</h2>";
     i++
 }
 
