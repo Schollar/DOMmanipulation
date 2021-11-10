@@ -1,4 +1,4 @@
-// Using querySelector to select all p tags and hold it in a variable.
+// Using querySelector to select the first p tag and hold it in a variable.
 var p_color = document.querySelector('p');
 // changing the color of the first p tag we just selected to purple
 p_color.style.color = "purple";
