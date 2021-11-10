@@ -1,16 +1,15 @@
-
-
 // Using querySelector to select all p tags and hold it in a variable.
 var p_color = document.querySelector('p');
 // changing the color of the first p tag we just selected to purple
 p_color.style.color = "purple";
 
-// Use queartSelectorAll to select all h1 tags;
+// Use quearySelectorAll to select all h1 tags;
 var h1_color = document.querySelectorAll('div > h1');
 // Loop through and change color to blue
 for (var i = 0; i < h1_color.length; i++) {
     h1_color[i].style.color = "blue";
 }
+
 // Using getElementById to select a specific ID
 var container = document.getElementById("container");
 // changing the background of the element to skyblue
@@ -56,7 +55,7 @@ new_p.classList.add('new_class');
 // Now we are going to toggle and create a new class token
 new_p.classList.toggle('second_class');
 
-// Finnally we remove the new_class from the tag leaving the toggle token we just made
+// Finally we remove the new_class from the tag leaving the toggle token we just made
 new_p.classList.remove('new_class');
 
 // Using replace we can replace the toggle class we made with new_class from before
